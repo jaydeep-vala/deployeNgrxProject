@@ -1,0 +1,15 @@
+<p>aip-show works!</p>
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>UserID</td>
+        <td>Complete</td>
+    </tr>
+    <tr *ngFor="let user of data">
+        <td>{{user.id}}</td>
+        <td>{{user.title}}</td>
+        <td>{{user.userId}}</td>
+        <td>{{user.completed}}</td>
+    </tr>
+</table>

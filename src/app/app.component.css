@@ -1,0 +1,22 @@
+.hide {
+    display: none;
+}
+
+.myDIV:hover {
+    /* display: block; */
+    background-color: red;
+}
+
+.mytable1 {
+    border: 2px solid black;
+    text-align: center;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+    padding: 100px;
+    size: 110px;
+}
+
+.center {
+    margin: 2 auto;
+    text-align: center;
+}

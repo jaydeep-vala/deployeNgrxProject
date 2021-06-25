@@ -1,0 +1,47 @@
+<p>user-add works!</p>
+
+<h1 class="center mt-5">simple form in angular</h1>
+<form class="center" [formGroup]="myReactiveForm" >
+    <input type="number" name="firstname" placeholder="UserID" style="width: 200px; height: 30px;" formControlName="userId"><br><br>
+    <input type="text" name="lastname" placeholder="Title" style="width: 200px; height: 30px;" formControlName="title"><br><br>
+    <!-- <div> -->
+        <input type="text" name="email" placeholder="Completed" style="width: 200px; height: 30px;" formControlName="completed">
+        <!-- <br> <small *ngIf="!myReactiveForm.get('email')?.valid && myReactiveForm.get('email')?.touched" style="color: red;">Please Enter Valid Email</small> -->
+    <!-- </div><br> -->
+    <!-- <div> -->
+
+        <!-- <input type="text" name="phone" maxlength="10" placeholder="Phone" style="width: 200px; height: 30px;" formControlName="phone">
+        <div *ngIf="!myReactiveForm.get('phone')?.valid && myReactiveForm.get('phone')?.touched" style="color: red;">
+            <small *ngIf="!myReactiveForm.get('phone')?.errors?.required">Mobile Number is not Valid.</small>
+            <small *ngIf="!myReactiveForm.get('phone')?.errors?.pattern">Please, Enter 10 digit Mobile Number.</small>
+        </div>
+    </div><br><br>
+    <input type="text" name="address" placeholder="Address" style="width: 200px; height: 30px;" formControlName="address"><br><br> -->
+    <!-- <select>
+      <ng-container *ngFor="let option of options" formControlName="country" formControlName="country">
+        <option *ngIf="!option.isDivider" [ngValue]="option">{{option.name}}</option>
+     
+    
+      </ng-container>
+    </select> -->
+    <!-- <select name="" id="country" formControlName="country" style="width: 200px; height: 30px;">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Pakistan">Pakistan</option>
+    </select> -->
+    <br>
+    <br>
+    <a type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</a>
+
+
+    <ng-template [ngIf]='show=="red"'>
+        <p>
+            <ngb-alert>
+                Form Submitted Successfully
+            </ngb-alert>
+        </p>
+    </ng-template>
+
+
+</form>

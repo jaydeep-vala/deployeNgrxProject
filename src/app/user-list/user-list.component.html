@@ -1,0 +1,29 @@
+<!-- <button (click)='submit()' style="color: green;">Get My name</button> -->
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">UserId</th>
+            <th scope="col">Completed</th>
+            <!-- <th scope="col">Mobile Number</th>
+            <th scope="col">Address</th>
+            <th scope="col">Country</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of user1; let i = index">
+            <td scope="row">{{user.id}}</td>
+            <td>{{user.title}}</td>
+            <td>{{user.userId}}</td>
+            <td>{{user.completed}}</td>
+            <!-- <td>{{user.phone}}</td> -->
+            <!-- <td>{{user.address}}</td>
+            <td>{{user.country}}</td>
+            <td><button (click)="ondelete(i+1)" class="btn btn-danger">Delete</button></td>
+            <td><button class="btn btn-primary">Edit</button></td> -->
+        </tr>
+
+    </tbody>
+</table>
